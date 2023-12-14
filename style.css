@@ -103,3 +103,24 @@ padding-top: 20px;
 .main{
     flex-grow: 1; /* растянуть */
 }
+.top{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 50px;
+}
+.title{
+    padding-bottom: 40px;
+    font-style: 116px;
+    font-weight: 700;
+}
+.top__link{
+    background-color: 151515px;
+    padding: 23px;
+    min-width: 430px;
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-style: 36px;
+    font-weight: 700;
+}
