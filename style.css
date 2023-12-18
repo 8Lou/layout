@@ -17,6 +17,12 @@ a{
     text-decoration: none;
     color: inherit; /* parent */
 }
+.section-title{
+    margin-bottom: 50px;
+    font-style: 48px;
+    font-weight: 700;
+    text-align: center;
+}
 .wrapper{
     min-height: 100%;
     display: flex;
@@ -39,7 +45,7 @@ body{
 .header-main{
     background-color: transparent;
     position: absolute;
-    z-index: 4px;
+    z-index: 1px;
     left: 0;
     right: 0;
 }
@@ -112,47 +118,97 @@ body{
     padding-top: 250px;
     padding-bottom: 50px;
     position: absolute;
-    z-index: 5px; 
+    z-index: 2px; 
     left: 0;
     right: 0;
 }
 .title{
     padding-bottom: 40px;
-    font-size: 86px;
+    font-size: 76px;
     font-weight: 700;
     /* color: antiquewhite; */
 }
 .top__link{
     background-color: 151515px;
-    padding: 23px;
+    padding: 75px;
     max-width: 430px;
     width: 100%;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 29px;
     font-weight: 700;
 }
-.swiper{
-
-    /* width: 100%; */
+.swiper {
+    z-index: -1;
 }
-.swiper-wrapper{
+.swiper::after{
+    content: '';
     background: rgba(21, 21, 21, .3);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
 .swiper-slide{
     background-repeat: no-repeat;
     background-size: cover; /* в размер экрана */
     background-position: center center;
     height: 100vh;
+    z-index: -1px; 
 }
 .swiper-pagination-bullet {
     width: 120px;
-    height: 3px;
+    height: 6px;
     background-color: 151515px;
     border-radius: 10px;
+    opacity: .5;
+}
+.swiper-pagination-horizontal
+.swiper-pagination-bullets 
+.swiper-pagination-bullet {
+    margin: 0 15px;
+}
+.swiper-pagination-bullets
+.swiper-pagination-horizontal{
+    bottom: 50px;
 }
 .swiper-pagination-bullet-active{
-    height: 6px;
     background-color: #fff;
+    height: 6px;
+}
 
+.why-lease{
+    padding: 150px 0;
+}
+.why-lease__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;    
+}
+.why-lease__item-img{
+    margin-bottom: 30px;    
+    padding: 20px;
+    border: 1px solid #ffa238;
+    border-radius: 50%;
+    transform-origin: 1px 1px;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+.why-lease__item-img:hover{
+    filter: drop-shadow(2px 4px 7px rgb(206, 137, 9)) ;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.why-lease__item-title{
+    margin-bottom: 30px;
+    font-style: 24px;
+    font-weight: 700;
+
+}
+.why-lease__item-text{
+    text-align: left;
 }
