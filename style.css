@@ -19,7 +19,7 @@ a{
 }
 .section-title{
     margin-bottom: 50px;
-    font-style: 48px;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
 }
@@ -64,6 +64,9 @@ body{
     color: azure;
     text-transform: uppercase;
     font-weight: 700;
+}
+.menu__list-link--active{
+    color: #ffa238;
 }
 
 .footer{
@@ -388,7 +391,7 @@ body{
     background-color: #c28119;
     padding: 4px 20px;
 }
-.blog__link{
+.showmore-link{
     text-transform: uppercase;
     background-color: #151515;
     padding: 13px;
@@ -397,4 +400,66 @@ body{
     margin: 0 auto;
     text-align: center;
     display: block;
+}
+
+.choose{
+    padding: 70px 0 150px;
+}
+.tabs{
+    
+}
+.section-title{
+
+}
+.tabs__btn{
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 70px;
+}
+.tabs__btn-item{
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.tabs__btn-item--active{
+    color: #c28119;
+}
+.tabs__content-item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 40px;    
+    padding: 0 0 70px 0;
+}
+.card{
+    text-align: center;
+    border: 1px solid #c28119;
+}
+.card__img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.card__text{
+    margin-bottom: 20px;
+}
+.card__title{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+.card__price{
+    padding: 0 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.card__link{
+    display: block;
+    color: #c28119;
 }
