@@ -123,19 +123,19 @@ body{
     right: 0;
 }
 .title{
-    padding-bottom: 40px;
+    padding-bottom: 85px;
     font-size: 76px;
     font-weight: 700;
     /* color: antiquewhite; */
 }
 .top__link{
-    background-color: 151515px;
-    padding: 75px;
-    max-width: 430px;
+    background-color: #151515;
+    padding: 20px;
+    max-width: 260px;
     width: 100%;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 29px;
+    font-size: 25px;
     font-weight: 700;
 }
 .swiper {
@@ -161,7 +161,7 @@ body{
 .swiper-pagination-bullet {
     width: 120px;
     height: 6px;
-    background-color: 151515px;
+    background-color: #151515;
     border-radius: 10px;
     opacity: .5;
 }
@@ -285,21 +285,23 @@ body{
 }
 .important__list{
     display: grid;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 .important__item-img{
-    max-width: 150px;
+    width: 260px;
+    height: 150px;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .contacts{
+    text-align: center;
     padding: 100px 0 150px;
 }
 .contacts-title{
     margin-bottom: 20px;
 }
 .contacts__text{
-    text-align: center;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 50px;
@@ -354,4 +356,45 @@ body{
     font-size: 16px;
     font-weight: 400;
     padding: 13px 61px;
+}
+
+.blog{
+    padding-bottom: 150px;
+}
+.blog__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 70px;
+}
+.blog__item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blog__item-img{
+    width:  360px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+.blog__item-title{
+    flex-basis: 460px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.blog__item-link{
+    color: azure;
+    background-color: #c28119;
+    padding: 4px 20px;
+}
+.blog__link{
+    text-transform: uppercase;
+    background-color: #151515;
+    padding: 13px;
+    color: #fff;
+    width: 225px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
 }
