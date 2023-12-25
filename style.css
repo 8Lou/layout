@@ -140,6 +140,7 @@ body{
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 700;
+    border: rgba(203, 136, 54, 0.949);
 }
 .swiper {
     z-index: -1;
@@ -430,10 +431,13 @@ body{
     color: #c28119;
 }
 .tabs__content-item{
-    display: grid;
+    display: none;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px 40px;    
     padding: 0 0 70px 0;
+}
+.tabs__content-item, .tabs__content-item--active{
+    display: grid;
 }
 .card{
     text-align: center;
